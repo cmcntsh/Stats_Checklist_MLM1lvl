@@ -89,7 +89,7 @@ Hopefully, the statistics you calculate are more than just a collection of rando
 | What are the independent (or predictor) and dependent (or outcome) variables for the test, and what is the level of measurement for each one? |
 | IV:<br><br>DV:<br><br>For multi-level models:<br><br>What is the hierarchical structure of the data?<br><br>Level 3:<br><br>Level 2:<br><br>Level 1<br><br>Considerations for fixed and random effects (Fixed effects - interested in differences between levels. Random effects - interested in quantifying variability between levels, interested in generalizing beyond current observed levels, unbalanced design, categorical nuisance variable)<br><br>Will a random intercept be present?<br><br>Will random slopes be present?<br><br>Model to be fit, including the fixed effects in the model and random effects in the model:<br><br>Do variables need to be centered for the model to converge (grand mean centering, group mean centering)?<br><br> |
 | What are the assumptions for the statistical test used? Do the data in the dataset meet those assumptions? If not, should an alternative test be selected or are any adjustments necessary to conduct a meaningful test? |
-| $\textcolor{red}{Update \ this \ section:}$ <br>sample is randomly selected from population<br>Observations are independent<br>data are normally distributed (residuals are normally distributed)<br>linear relationship between predictor and outcome<br>homoscedasticity<br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>sample is randomly selected from population<br>(not an assumption for multi-level models)Observations are independent<br>data are normally distributed (residuals are normally distributed)<br>linear relationship between predictor and outcome<br>homoscedasticity<br> |
 | NHST steps: (for the regression model overall) |
 | For regression analyses, these steps are essentially followed twice. Once for evaluating the model overall, and once for evaluating the model parameters individually.<br> |
 | 1. State the null and alternative hypothesis. |
@@ -97,7 +97,7 @@ Hopefully, the statistics you calculate are more than just a collection of rando
 | 2. Establish the criteria for rejection (alpha level). |
 | Typically alpha = .05<br><br><br><br> |
 | 3. Calculate the test statistic. |
-| $\textcolor{red}{Update \ this \ section:}$ <br>F(df 1, df 2) = [F-value], p = [p-value]<br><br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>F(df 1, df 2) = [F-value], p = [p-value]<br><br>Assessing model fit and comparing multilevel models:<br><br>AIC (goodness-of-fit corrected for model complexity, smaller values mean better fit for full ML estimation for nested models):<br><br>BIC (more conservative than AIC, corrects harshly for number of parameters, use when sample size is large and number of parameters is small):<br><br> |
 | 4. Make a decision about the null hypothesis. (Reject or fail to reject?) |
 | $\textcolor{red}{Update \ this \ section:}$ <br>reject or fail to reject null model?<br><br> |
 | NHST steps: (for the model parameters) |
